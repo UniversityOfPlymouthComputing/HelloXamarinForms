@@ -7,12 +7,12 @@
              x:Class="HelloXamarinForms.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label x:Name="MessageLabel"
-            Text="Welcome to Xamarin.Forms!" 
-            FontSize="Large"
-            HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand" />
+        <Label x:Name="MessageLabel">
+            <Label.Text>"Welcome to Xamarin.Forms!"</Label.Text>
+            <Label.FontSize>18.0</Label.FontSize>
+            <Label.HorizontalOptions>LayoutOptions.Center</Label.HorizontalOptions>
+            <Label.VerticalOptions>LayoutOptions.CenterAndExpand</Label.VerticalOptions>
+        </Label>
 
         <Button Text="Click Me" VerticalOptions="CenterAndExpand" Clicked="Handle_Clicked"/>
     </StackLayout>
